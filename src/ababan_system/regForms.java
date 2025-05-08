@@ -267,7 +267,7 @@ public class regForms extends javax.swing.JFrame {
             
             try{
             String pass = passwordHasher.hashPassword(regPass.getText());
-            if(dbc.insertData("INSERT INTO tbl_user(u_fname, u_email, u_contact, u_username, u_password, u_status, u_type) "
+            if(dbc.insertData("INSERT INTO tbl_user(u_name, u_email, u_contact, u_user, u_password, u_status, u_type) "
                 + "VALUES('"+regName.getText()+"','"+regEmail.getText()+"','"+regnumber.getText()+"','"+regUser.getText()+"','"+pass+"','pending','"+regUserType.getSelectedItem()+"')"))
         {
             JOptionPane.showMessageDialog(null, "Inserted Successfully");

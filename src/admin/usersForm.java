@@ -52,9 +52,10 @@ public class usersForm extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         UserID = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         p_add = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         userTable = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
@@ -117,15 +118,12 @@ public class usersForm extends javax.swing.JFrame {
         });
         jPanel4.setLayout(null);
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("USER");
-        jPanel4.add(jLabel6);
-        jLabel6.setBounds(40, 120, 60, 30);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/111.png"))); // NOI18N
+        jPanel4.add(jLabel3);
+        jLabel3.setBounds(-10, -30, 190, 250);
 
         jPanel3.add(jPanel4);
-        jPanel4.setBounds(30, 20, 130, 150);
+        jPanel4.setBounds(10, 10, 180, 160);
 
         p_add.setBackground(new java.awt.Color(51, 51, 51));
         p_add.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -150,16 +148,26 @@ public class usersForm extends javax.swing.JFrame {
         jPanel3.add(p_add);
         p_add.setBounds(0, 210, 190, 40);
 
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("USER");
+        jPanel3.add(jLabel6);
+        jLabel6.setBounds(70, 170, 60, 30);
+
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 190, 380));
 
+        userTable.setBackground(new java.awt.Color(102, 102, 102));
         jScrollPane1.setViewportView(userTable);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 38, 470, 380));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 470, 380));
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("USER FORM");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 163, 18));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("BACK");
@@ -168,27 +176,7 @@ public class usersForm extends javax.swing.JFrame {
                 jLabel2MouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 444, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(615, 13, -1, 18));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 660, 40));
 
@@ -310,6 +298,7 @@ public class usersForm extends javax.swing.JFrame {
     private javax.swing.JPanel edit;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

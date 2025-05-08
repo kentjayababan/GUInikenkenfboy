@@ -124,6 +124,7 @@ public class createUserForm extends javax.swing.JFrame {
         fn7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -319,7 +320,7 @@ public class createUserForm extends javax.swing.JFrame {
         fn7.setText("Email:");
         jPanel3.add(fn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 50, 10));
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 530, 380));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 510, 380));
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -329,6 +330,9 @@ public class createUserForm extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 180, -1));
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/5.jpg"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 40, 240, 380));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
@@ -349,7 +353,7 @@ public class createUserForm extends javax.swing.JFrame {
         if(regName.getText().isEmpty()||regnumber.getText().isEmpty()||regUser.getText().isEmpty()||regPass.getText().isEmpty())
 
         {
-            JOptionPane.showMessageDialog(null, "Fill apa ang wa na fill apan duh!");
+            JOptionPane.showMessageDialog(null, "Napay Kuwang Bayuueet!");
         }else if(regPass.getText().length()< 8){
             JOptionPane.showMessageDialog(null, "Password character should be 8 above");
             regPass.setText("");
@@ -532,6 +536,7 @@ public class createUserForm extends javax.swing.JFrame {
     private javax.swing.JLabel fn5;
     private javax.swing.JLabel fn6;
     private javax.swing.JLabel fn7;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
